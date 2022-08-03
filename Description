@@ -1,0 +1,4 @@
+In index.php First I have started the session after that I have created the CSRF Token.
+And also declared within <form>...</form>. Now the client side declaration is over.
+Next Server side validation, So Here also I have started the session and  giving condition before inserting the data to database.{ if($_POST['csrf_token']==$_SESSION['csrf_token']) }.
+If the condition is true then it will enter into the process, else print Invalid CSRF Token.
